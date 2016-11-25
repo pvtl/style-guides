@@ -105,7 +105,9 @@ Always try to avoid superfluous parent elements.
 
 ## Separation of Concerns
 
-Always keep markup, styling, and scripting separate.
+- Always keep markup, styling, and scripting separate.
+- Avoid binding to the same class in both your CSS and JavaScript. Conflating the two often leads to, at a minimum, time wasted during refactoring when a developer must cross-reference each class they are changing, and at its worst, developers being afraid to make changes for fear of breaking functionality.
+ - We recommend using data attributes instead [see Javascript guide](/js-web#targeting-elements)
 
 ```html
 <!-- Bad Example -->
@@ -134,8 +136,9 @@ Always keep markup, styling, and scripting separate.
 </head>
 <body>
 
-<h1>This is a heading.</h1>
-<p>This is an underlined paragraph.</p>
+<h1 class="page_title">This is a heading.</h1>
+<p class="sub_title">This is an underlined paragraph.</p>
+<a href="/about" data-open-lightbox>About Us</a>
 </body>
 </html>
 ```

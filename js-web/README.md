@@ -5,6 +5,7 @@
 ## Table of Contents
 
   1. [Linting](#linting)
+  1. [Targeting Elements](#targeting-elements)
   1. [Spacing](#spacing)
   1. [Constructors](#constructors)
   1. [Equality](#equality)
@@ -55,6 +56,23 @@ The following common options must be used in all projects:
   "undef": true,
   "unused": true
 }
+```
+
+## Targeting Elements
+
+- Targeting HTML selectors should only ever be done by data attributes - this separates style from function, and means we don't need to be too concerned about moving items or duplicating items and affecting styles
+- Please use hyphens for custom data attributes and make the descriptive of what it is/does, eg. `<div data-toggle-menu></div>`
+- When your custom data attribute has a value, please hyphenate them. eg. `<div data-toggle-menu="primary-menu"></div>`
+- When traversing - instead of targeting direct ancestors/descendants - eg. using jQuery's .children() function - consider that another developer may need to nest further (eg. for styling purposes) and the item may end up levels deeper than first expected. Instead you can use another jQuery function such as .find() as an alternative to .children()
+
+```js
+$('[data-toggle-menu]').click(function(){ [...] });
+```
+
+```html
+<div class="checkout_content">
+  <a class="button button_blue" data-toggle-menu>Open Menu</a>
+</div>
 ```
 
 ## Spacing
@@ -143,7 +161,6 @@ foo(data, function() {
   // Do stuff
 });
 ```
-
 
 ### Object and Array Expressions
 
