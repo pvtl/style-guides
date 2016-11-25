@@ -14,11 +14,11 @@ We've developed the following code style guides, to:
 
 ## Style Guides
 
-- [HTML](html/README.md)
-- [CSS](css/README.md)
-- [Javascript - Web](js-web/README.md)
-- [Javascript - React Native](js-react-native/README.md)
-- [PHP](php/README.md)
+- [HTML](html)
+- [CSS](css)
+- [Javascript - Web](js-web)
+- [Javascript - React Native](js-react-native)
+- [PHP](php)
 
 ## General Code Standards
 

@@ -1,0 +1,10 @@
+*.log
+.tmp
+*~
+*#
+.DS_Store
+.DS_STORE
+.netbeans
+nbproject
+.idea
+*.lock
