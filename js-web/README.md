@@ -20,43 +20,15 @@
 
 ## Linting
 
-Use JSHint to detect errors and potential problems. Every project has a Gulp task for linting all JavaScript files: `gulp jshint`. The options for JSHint are stored in a `.jshintrc` file; many repositories will have multiple `.jshintrc` files based on the type of code in each directory.
+Linting is the process of running your code through a tool to analyse for potential errors and ensure consistency against a style guide. Some of the rules below can be caught automatically in your editor via our [.eslintrc](.eslintrc) configuration.
 
-Each `.jshintrc` file follows a specific format. All options must be alphabetized and grouped:
+Please ensure your editor is setup with eslint-linting, and place the [.eslintrc](.eslintrc) file in the root directory.
 
-```json
-{
-  "common1": true,
-  "common2": true,
+Plugins:
 
-  "repoSpecific1": true,
-  "repoSpecific2": true,
-
-  "globals": {
-    "repoGlobal1": true,
-    "repoGlobal2": false
-  }
-}
-```
-
-The following common options must be used in all projects:
-
-```json
-{
-  "boss": true,
-  "curly": true,
-  "eqeqeq": true,
-  "eqnull": true,
-  "expr": true,
-  "immed": true,
-  "noarg": true,
-  "quotmark": "single",
-  "smarttabs": true,
-  "trailing": true,
-  "undef": true,
-  "unused": true
-}
-```
+- [Sublime Text](https://github.com/roadhump/SublimeLinter-eslint)
+- [Atom](https://atom.io/packages/linter-eslint)
+- [PHPStorm](https://plugins.jetbrains.com/plugin/7494)
 
 ## Targeting Elements
 
