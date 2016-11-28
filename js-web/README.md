@@ -50,7 +50,7 @@ The following common options must be used in all projects:
   "expr": true,
   "immed": true,
   "noarg": true,
-  "quotmark": "double",
+  "quotmark": "single",
   "smarttabs": true,
   "trailing": true,
   "undef": true,
@@ -132,7 +132,7 @@ try {
   // Expressions
 }
 
-array = [ "*" ];
+array = [ '*' ];
 
 array = [ a, b ];
 
@@ -140,15 +140,15 @@ foo(arg);
 
 foo(options, object[ property ]);
 
-foo([ a, b ], "property", { c: d });
+foo([ a, b ], 'property', { c: d });
 
-foo({ a: "alpha", b: "beta" });
+foo({ a: 'alpha', b: 'beta' });
 
 foo([ a, b ]);
 
 foo({
-  a: "alpha",
-  b: "beta"
+  a: 'alpha',
+  b: 'beta'
 });
 
 foo(function() {
@@ -169,7 +169,7 @@ Object and array expressions can be on one line if they are short (remember the 
 ```js
 // Bad
 map = { ready: 9,
-  when: 4, "you are": 15 };
+  when: 4, 'you are': 15 };
 
 array = [ 9,
   4,
@@ -186,7 +186,7 @@ array = [ {
 } ];
 
 // Good
-map = { ready: 9, when: 4, "you are": 15 };
+map = { ready: 9, when: 4, 'you are': 15 };
 
 array = [ 9, 4, 15 ];
 
@@ -203,7 +203,7 @@ array = [
 map = {
   ready: 9,
   when: 4,
-  "you are": 15
+  'you are': 15
 };
 
 array = [
@@ -235,12 +235,12 @@ When a statement is too long to fit on one line, line breaks must occur after an
 
 ```js
 // Bad
-var html = "<p>The sum of " + a + " and " + b + " plus " + c
-  + " is " + (a + b + c);
+var html = '<p>The sum of ' + a + ' and ' + b + ' plus ' + c
+  + ' is ' + (a + b + c);
 
 // Good
-var html = "<p>The sum of " + a + " and " + b + " plus " + c +
-  " is " + (a + b + c);
+var html = '<p>The sum of ' + a + ' and ' + b + ' plus ' + c +
+  ' is ' + (a + b + c);
 ```
 
 Lines should be broken into logical groups if it improves readability, such as splitting each expression of a ternary operator onto its own line even if both will fit on a single line.
@@ -267,11 +267,11 @@ When a chain of method calls is too long to fit on one line, there must be one c
 
 ```js
 elements
-  .addClass("foo")
+  .addClass('foo')
   .children()
-    .html("hello")
+    .html('hello')
   .end()
-  .appendTo("body");
+  .appendTo('body');
 ```
 
 ### Full File Closures
@@ -298,9 +298,9 @@ The same applies to AMD wrappers.
 
 ```js
 define([
-  "foo",
-  "bar",
-  "baz"
+  'foo',
+  'bar',
+  'baz'
 ], function(foo, bar, baz) {
 
 // This doesn't get indented
@@ -312,11 +312,11 @@ For UMD, the factory is indented to visually differentiate it from the body.
 
 ```js
 (function(factory) {
-  if (typeof define === "function" && define.amd) {
+  if (typeof define === 'function' && define.amd) {
 
     // AMD. Register as an anonymous module.
     define([
-      "jquery"
+      'jquery'
     ], factory);
   } else {
 
@@ -357,10 +357,10 @@ undefOrNull == null;
 
 ## Type Checks
 
-- String: `typeof object === "string"`
-- Number: `typeof object === "number"`
-- Boolean: `typeof object === "boolean"`
-- Object: `typeof object === "object"`
+- String: `typeof object === 'string'`
+- Number: `typeof object === 'number'`
+- Boolean: `typeof object === 'boolean'`
+- Object: `typeof object === 'object'`
 - Plain Object: `jQuery.isPlainObject(object)`
 - Function: `jQuery.isFunction(object)`
 - Array: `jQuery.isArray(object)`
@@ -368,7 +368,7 @@ undefOrNull == null;
 - null: `object === null`
 - null or undefined: `object == null`
 - undefined:
-  - Global Variables: `typeof variable === "undefined"`
+  - Global Variables: `typeof variable === 'undefined'`
   - Local Variables: `variable === undefined`
   - Properties: `object.prop === undefined`
 
@@ -380,8 +380,8 @@ Comments are always preceded by a blank line. Comments start with a capital firs
 Single line comments go __over__ the line they refer to:
 
 ```js
-// We need an explicit "bar", because later in the code foo is checked.
-var foo = "bar";
+// We need an explicit 'bar', because later in the code foo is checked.
+var foo = 'bar';
 
 // Even long comments that span
 // multiple lines use the single
@@ -403,16 +403,16 @@ Do not write API documentation in comments. API documentation lives in its own r
 
 ## Quotes
 
-We use double quotes.
+We use single quotes.
 
 ```js
-var double = "I am wrapped in double quotes";
+var single = 'I am wrapped in single quotes';
 ```
 
-Strings that require inner quoting must use double outside and single inside.
+Strings that require inner quoting must use single outside and double inside.
 
 ```js
-var html = "<div id='my-id'></div>";
+var html = '<div id="my-id"></div>';
 ```
 
 ## Semicolons
@@ -425,16 +425,16 @@ Variable and function names should be full words, using camel case with a lowerc
 
 ```js
 // Bad
-var hours_prefix = "The number of hours: ";
-var NAMEPREFIX = "Name: ";
-var PhonePrefix = "Phone: ";
+var hours_prefix = 'The number of hours: ';
+var NAMEPREFIX = 'Name: ';
+var PhonePrefix = 'Phone: ';
 
 function do_this() {}
 
 // Good
-var hoursPrefix = "The number of hours: ";
-var namePrefix = "Name: ";
-var phonePrefix = "Phone: ";
+var hoursPrefix = 'The number of hours: ';
+var namePrefix = 'Name: ';
+var phonePrefix = 'Phone: ';
 
 function notifyOnError() {}
 ```
