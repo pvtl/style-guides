@@ -26,10 +26,11 @@ We've developed the following code style guides, to:
 
 ## Team-wide Editor Settings
 
+- Install [EditorConfig](http://editorconfig.org/) to your editor, to recognize our [.editorconfig](.editorconfig) file per project
+ - Ensure the [.editorconfig](.editorconfig) exists in the root dir of your project
 - Indentations - spaces not tabs
- - Use 2 spaces for HTML, CSS and JS
+ - Use 2 spaces for all files except:
  - Use 4 spaces for PHP
-- Install [EditorConfig](http://editorconfig.org/) to your editor, to recognize our .editorconfig file per project
 
 ## Amendments
 
