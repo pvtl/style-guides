@@ -22,6 +22,7 @@
     - [Mixins](#mixins)
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
+  1. [Linting](#linting)
   1. [Tooling](#tooling)
 
 ## Terminology
@@ -42,7 +43,7 @@ A “rule declaration” is the name given to a selector (or a group of selector
 In a rule declaration, “selectors” are the bits that determine which elements in the DOM tree will be styled by the defined properties. Selectors can match HTML elements, as well as an element's class, ID, or any of its attributes. Here are some examples of selectors:
 
 ```css
-.my_element-class {
+.my_element_class {
   /* ... */
 }
 
@@ -247,9 +248,21 @@ Again: **never nest ID selectors!**
 
 If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
 
+## Linting
+
+Linting is the process of running your code through a tool to analyse for potential errors and ensure consistency against a style guide. Some of the rules above can be caught automatically in your editor via our [.scss-lint.yml](.scss-lint.yml) configuration.
+
+Please ensure your editor is setup with scss-linting, and place the [.scss-lint.yml](.scss-lint.yml) file in the /assets/scss directory.
+
+Plugins:
+
+- [Sublime Text](https://github.com/attenzione/SublimeLinter-scss-lint)
+- [Atom](https://atom.io/packages/linter-scss-lint)
+- [PHPStorm](https://plugins.jetbrains.com/plugin/7530)
+
 ## Tooling
 
-The team use a bunch of different tools - PrePros, Koala, Gulp, Ruby Sass etc.
+The team use a bunch of different tools - PrePros, Koala, Gulp, Ruby Sass etc. Feel free to use the tools you feel most comfortable with.
 
 Please ensure you set your tooling to:
 
