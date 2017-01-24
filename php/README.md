@@ -1,3 +1,44 @@
-# Pivotal Agency PHP Style Guide
+Pivotal Agency PHP Style Guide
+=====================
 
-*Coming soon...*
+We use the [PSR-1 Basic Coding Standard](PSR-1-basic-coding-standard.md) and the [PSR-2 Coding Style Guide](PSR-2-coding-style-guide.md) (including [errata](PSR-2-coding-style-guide-meta.md#errata)).
+
+
+Naming Conventions
+-----------
+
+We use the "camelCase" format for all variable/property and function/method names.
+
+As per PSR-2 (section 4.2 and 4.3) do not use leading underscores to indicate private or protected visibility (eg. $_badPrivateVariable).
+
+    $firstName = 'Joe';
+
+    function printName($firstName)
+    {
+      echo $firstName;
+    }
+
+
+Editor Configuration
+-----------
+Ensure your editor is setup to use *.editorconfig* files, and use the *.editorconfig* file in the repo root in all new PHP projects.
+
+This will automatically apply settings like indent spacing (4 spaces), line endings (LF), trim trailing whitespace etc, to ensure code written by various developers is consistent.
+
+
+### PhpStorm
+
+Make sure that the "EditorConfig" plugin is enabled. The plugin is bundled with WebStorm and is activated by default. If the plugin is not activated, enable it on the Plugins page of the Settings / Preferences Dialog as described in [Enabling and Disabling Plugins](https://www.jetbrains.com/help/webstorm/2016.3/enabling-and-disabling-plugins.html).
+
+Next, make sure your [code style is set to PSR-1 / PSR-2](https://www.jetbrains.com/help/phpstorm/2016.3/code-style-php.html).
+
+
+### Atom
+Install these packages:
+
+  * [editorconfig](https://atom.io/packages/editorconfig)
+  * [linter](https://atom.io/packages/linter)
+  * [linter-phpcs](https://atom.io/packages/linter-phpcs) (requires “PHP_CodeSniffer” PEAR package)
+  * [php-cs-fixer](https://atom.io/packages/php-cs-fixer) (optional - automatically fixes linting errors)
+
+You may need to restart Atom for these packages to take effect.
