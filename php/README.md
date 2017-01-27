@@ -38,7 +38,14 @@ Install these packages:
 
   * [editorconfig](https://atom.io/packages/editorconfig)
   * [linter](https://atom.io/packages/linter)
-  * [linter-phpcs](https://atom.io/packages/linter-phpcs) (requires “PHP_CodeSniffer” PEAR package)
+  * [linter-phpcs](https://atom.io/packages/linter-phpcs) (requires [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) PEAR package)
   * [php-cs-fixer](https://atom.io/packages/php-cs-fixer) (optional - automatically fixes linting errors)
 
 You may need to restart Atom for these packages to take effect.
+
+### Sublime Text 3
+Install these packages:
+
+  * [editorconfig](https://github.com/sindresorhus/editorconfig-sublime)
+  * [SublimeLinter](http://www.sublimelinter.com/en/latest/)
+  * [SublimeLinter-phpcs](https://github.com/SublimeLinter/SublimeLinter-phpcs) (requires [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) PEAR package)
