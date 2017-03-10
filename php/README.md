@@ -28,7 +28,7 @@ Comment as much as possible, to help the reader understand what you're doing, as
 Although, keep in mind:
 
  - It's better to focus on creating readable code, than having to explain every line
- - It’s fair to assume that the reader has a basic understanding of syntax (eg. how a for-loop works); so there’s no need to add a comment such as `// iterate over the customer array`
+ - It’s fair to assume that the reader has a basic understanding of syntax (eg. how a for-loop works); so there’s no need to add a comment such as `// iterate over the customer array` if the variables are self-explanatory
 
 ### Main sections
 
@@ -67,13 +67,10 @@ There are other points where you just need to explain what something is doing, w
 Control structure syntax ({} vs : endif)
 -----------
 
-PSR doesn't recommend which control structure syntax to use.  
-It's best to be consistent with the framework you're using.
-
-As a general rule (for consistency's sake):
+It's best to be consistent with the framework you're using. However as a general rule, we:
 
  - Always use the standard syntax (curly braces)
- - If you've got a deep nest of curly braces, consider refactoring, or use comments to monitor what each closing brace is for (eg. `} // end if - VIPs`)
+ - If you've got a deep nest of curly braces __1)__ consider refactoring or __2)__ use comments to monitor what each closing brace is for (eg. `} // end if - VIPs`)
  - When mixing HTML and PHP, use the alternative syntax
 
 Examples:
