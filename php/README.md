@@ -11,12 +11,14 @@ We use the "camelCase" format for all variable/property and function/method name
 
 As per PSR-2 (section 4.2 and 4.3) do not use leading underscores to indicate private or protected visibility (eg. $_badPrivateVariable).
 
+```php
     $firstName = 'Joe';
 
     function printName($firstName)
     {
       echo $firstName;
     }
+```
 
 Commenting
 -----------
@@ -30,14 +32,16 @@ Although, keep in mind:
 
 ### Main sections
 
-Use the [DocComment](https://phpdoc.org/docs/latest/guides/docblocks.html) format for function, methods and even main sections of code.  
-This helps other developers understand what this function does, what each parameter should do (if necessary) and what the function should return (if necessary).
+Use the [DocComment](https://phpdoc.org/docs/latest/guides/docblocks.html) format for functions, class methods and even main sections of code.
 
-This format also helps to separate functionality and blocks of code in a file, to make it easier when skimming through the document.
+This helps:
+
+ - Other developers understand what this function does, what each parameter should do (if necessary) and what the function should return (if necessary)
+ - To separate functionality and blocks of code in a file, to make it easier when skimming through the document
 
 eg.
 
-```
+```php
 /**
   * Title of this method/function/section
   *
