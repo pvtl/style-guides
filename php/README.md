@@ -64,6 +64,29 @@ There are other points where you just need to explain what something is doing, w
         ->addFieldToFilter('customer_id', $customerId);
 ```
 
+
+Logical Operators
+-----------
+
+Always use `&&` and `||` instead of `AND` and `OR` (respectively). If this is not an option, wrap them in brackets to ensure they behave as intended.
+
+```php
+  // Good
+  $a = true && false;
+  $b = false || true;
+
+  // Use brackets if you MUST use AND/OR
+  $c = (true AND false);
+  $d = (false OR true);
+
+  // BAD!
+  $e = true AND false;
+  $f = false OR true;
+```
+
+Not sure why this is so important? See [example #1 here](http://php.net/manual/en/language.operators.logical.php#example-108).
+
+
 Control structure syntax ({} vs : endif)
 -----------
 
