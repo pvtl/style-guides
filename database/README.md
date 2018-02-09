@@ -8,6 +8,7 @@ This style guide is intended for use when creating new database schemas.
     - [Database](#database)
     - [Table](#table)
     - [Columns](#columns)
+1. [Field Types](#field-types)
 1. [Indexes](#indexes)
 
 
@@ -72,7 +73,7 @@ Only use more exotic types when absolutely warranted (eg. `GEOMETRY`, for perfor
 When storing boolean data use the `INTEGER(1)` type. If the data represents an action ("true" when task is complete) consider if a nullable-datetime field would be suitable. If so, simply save the datetime when that action occurs. In this case a `null` value represents `false`, and a datetime represents `true`.
 
 
-# Indexes
+## Indexes
 
 Wherever possible, set a primary key (eg. `id`).
 
