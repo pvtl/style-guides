@@ -5,9 +5,9 @@ This style guide is intended for use when creating new database schemas.
 ## Table of Contents
 
 1. [Naming](#naming)
-  - [Database](#database)
-  - [Table](#table)
-  - [Columns](#columns)
+    - [Database](#database)
+    - [Table](#table)
+    - [Columns](#columns)
 1. [Indexes](#indexes)
 
 
