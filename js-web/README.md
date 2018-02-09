@@ -4,19 +4,19 @@
 
 ## Table of Contents
 
-  1. [Linting](#linting)
-  1. [Targeting Elements](#targeting-elements)
-  1. [Spacing](#spacing)
-  1. [Constructors](#constructors)
-  1. [Equality](#equality)
-  1. [Type Checks](#type-checks)
-  1. [Comments](#comments)
-  1. [Quotes](#quotes)
-  1. [Semicolons](#semicolons)
-  1. [Naming Conventions](#naming-conventions)
-  1. [Global Variables](#global-variables)
-  1. [DOM Node Rules](#dom-node-rules)
-  1. [Switch Statements](#switch-statements)
+1. [Linting](#linting)
+1. [Targeting Elements](#targeting-elements)
+1. [Spacing](#spacing)
+1. [Constructors](#constructors)
+1. [Equality](#equality)
+1. [Type Checks](#type-checks)
+1. [Comments](#comments)
+1. [Quotes](#quotes)
+1. [Semicolons](#semicolons)
+1. [Naming Conventions](#naming-conventions)
+1. [Global Variables](#global-variables)
+1. [DOM Node Rules](#dom-node-rules)
+1. [Switch Statements](#switch-statements)
 
 ## Linting
 

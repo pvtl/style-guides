@@ -1,5 +1,4 @@
-Pivotal Agency PHP Style Guide
-=====================
+# Pivotal Agency PHP Style Guide
 
 We use the [PSR-1 Basic Coding Standard](PSR-1-basic-coding-standard.md) and the [PSR-2 Coding Style Guide](PSR-2-coding-style-guide.md) (including [errata](PSR-2-coding-style-guide-meta.md#errata)).
 

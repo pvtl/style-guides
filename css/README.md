@@ -4,26 +4,26 @@
 
 ## Table of Contents
 
-  1. [Terminology](#terminology)
+1. [Terminology](#terminology)
     - [Rule Declaration](#rule-declaration)
     - [Selectors](#selectors)
     - [Properties](#properties)
-  1. [CSS](#css)
+1. [CSS](#css)
     - [Formatting](#formatting)
     - [Naming Conventions](#naming-conventions)
     - [Comments](#comments)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
     - [Border](#border)
-  1. [Sass](#sass)
+1. [Sass](#sass)
     - [Syntax](#syntax)
     - [Ordering](#ordering-of-property-declarations)
     - [Variables](#variables)
     - [Mixins](#mixins)
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
-  1. [Linting](#linting)
-  1. [Tooling](#tooling)
+1. [Linting](#linting)
+1. [Tooling](#tooling)
 
 ## Terminology
 
