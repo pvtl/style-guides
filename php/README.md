@@ -1,6 +1,6 @@
 # Pivotal Agency PHP Style Guide
 
-We use the [PSR-1 Basic Coding Standard](PSR-1-basic-coding-standard.md) and the [PSR-2 Coding Style Guide](PSR-2-coding-style-guide.md) (including [errata](PSR-2-coding-style-guide-meta.md#errata)).
+We use the [PSR-1 Basic Coding Standard](PSR-1-basic-coding-standard.md) and the [PSR-12 Extended Coding Style Guide](PSR-12-extended-coding-style-guide.md).
 
 
 Naming Conventions
@@ -8,7 +8,9 @@ Naming Conventions
 
 We use the "camelCase" format for all variable/property and function/method names.
 
-As per PSR-2 (section 4.2 and 4.3) do not use leading underscores to indicate private or protected visibility (eg. $_badPrivateVariable).
+As per PSR-12 (section 4.3 & 4.4) do not use leading underscores to indicate private or protected visibility (eg. $this->_badPrivateMethodName(), $_badPrivateVariable).
+
+Example of good property and method names:
 
 ```php
     $firstName = 'Joe';
@@ -125,7 +127,7 @@ This will automatically apply settings like indent spacing (4 spaces), line endi
 
 Make sure that the "EditorConfig" plugin is enabled. The plugin is bundled with WebStorm and is activated by default. If the plugin is not activated, enable it on the Plugins page of the Settings / Preferences Dialog as described in [Enabling and Disabling Plugins](https://www.jetbrains.com/help/webstorm/2016.3/enabling-and-disabling-plugins.html).
 
-Next, make sure your [code style is set to PSR-1 / PSR-2](https://www.jetbrains.com/help/phpstorm/2016.3/code-style-php.html).
+Next, make sure your [code style is set to PSR-1 / PSR-12](https://www.jetbrains.com/help/phpstorm/2016.3/code-style-php.html).
 
 
 ### Atom
@@ -137,6 +139,7 @@ Install these packages:
   * [php-cs-fixer](https://atom.io/packages/php-cs-fixer) (optional - automatically fixes linting errors)
 
 You may need to restart Atom for these packages to take effect.
+
 
 ### Sublime Text 3
 Install these packages:
