@@ -1,10 +1,6 @@
-# Pivotal Agency Code Style Guides
+# Pivotal Agency Code Standards
 
-The following style guide were developed and are maintained by Pivotal Agency. They are used by our team of developers.
-
-Each directory in this repo may contain a README.md file with the style guide as well as appropriate linting configuration.
-
-We've developed the following code style guides, to:
+We endorse code standards, to:
 
 - Improve team-wide code quality
 - Enhance each product's performance
@@ -12,26 +8,41 @@ We've developed the following code style guides, to:
 - In general, code consistency and readability across team members
 - Help on-board new team members
 
-## Style Guides
+We work with various frameworks and libraries, authored by different communities. This comes with different (and sometimes conflicting) code standards. For example, Wordpress has different code standards to Laravel. Instead of enforcing a set of code standards for a language, we support being consistent with each project's framework/library/boilerplate code standards.
+
+---
+
+## Languages
 
 - [HTML](html)
-- [CSS](css)
-- [Javascript - Web](js-web)
-- [Javascript - React Native](js-react-native)
-- [PHP](php)
+- [CSS](https://github.com/airbnb/css)
+- [Javascript](https://github.com/airbnb/javascript)
+- [PHP - Laravel](https://laravel.com/docs/master/contributions#coding-style)
+- [PHP - Wordpress](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/)
+- [PHP - Default position](php)
 
-## General Code Standards
+---
 
-*Coming soon...*
+## Editor Settings
 
-## Team-wide Editor Settings
+### 1. EditorConfig
 
-- Install [EditorConfig](http://editorconfig.org/) to your editor, to recognize our [.editorconfig](.editorconfig) file per project
- - Ensure the [.editorconfig](.editorconfig) exists in the root dir of your project
-- Indentations - spaces not tabs
- - Use 2 spaces for all files except:
- - Use 4 spaces for PHP
+1. Install [EditorConfig](http://editorconfig.org/) to your editor, to recognize our [.editorconfig](.editorconfig) file per project
+1. Ensure the [.editorconfig](.editorconfig) exists in the root dir of your project
 
-## Amendments
+### 2. PHP (PHPCS)
 
-We encourage you to fork this guide and change the rules to fit your team's style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
+1. [Setup PHPCS on your machine](https://medium.com/@mcnamee/phpcs-code-linting-for-wordpress-c340199364c6#b44c)
+1. [Configure your project via a phpcs.xml in your project root](https://medium.com/@mcnamee/phpcs-code-linting-for-wordpress-c340199364c6#40ad)
+    - Wordpress Code Standards:
+        - [Root directory phpcs.xml](https://bitbucket.org/pvtl/wordpress-theme-boilerplate-v3/src/master/phpcs-root.xml)
+        - [Theme directory phpcs.xml](https://bitbucket.org/pvtl/wordpress-theme-boilerplate-v3/src/master/phpcs.xml)
+    - [Laravel Code Standards](https://gist.github.com/paulund/8aacc8e8216c21136c182576fc078ec4)
+1. [Setup your IDE to give you realtime feedback](https://medium.com/@mcnamee/phpcs-code-linting-for-wordpress-c340199364c6#7b57)
+
+### 3. JS (eslint)
+
+1. [Setup your IDE to give you realtime feedback](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694#df4e)
+1. [Configure your project via a .eslintrc.js in your project root](https://medium.com/@mcnamee/phpcs-code-linting-for-wordpress-c340199364c6#40ad)
+    - [Wordpress Theme .eslintrc.js](https://bitbucket.org/pvtl/wordpress-theme-boilerplate-v3/src/master/.eslintrc.js)
+    - [React .eslintrc.js](https://github.com/mcnamee/react-starter-kit/blob/master/.eslintrc.js)
